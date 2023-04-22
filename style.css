@@ -1,0 +1,83 @@
+/* Set default font family and font size */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  background-color: #fafafa;
+}
+
+/* Center the title and give it a gradient background */
+h1 {
+  text-align: center;
+  background-image: linear-gradient(to right, #8dc1ff, #9f5f80);
+  color: #fff;
+  padding: 20px;
+  margin-top: 0;
+  border-radius: 0 0 20px 20px;
+}
+
+/* Style the form container */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Set input labels to be inline and aligned to the left */
+label {
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #4b4b4b;
+}
+
+/* Add some spacing between the input labels and the input fields */
+label input {
+  margin-left: 10px;
+}
+
+/* Style the submit button */
+.submit-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #8dc1ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Change the button color and cursor on hover */
+.submit-btn:hover {
+  background-color: #9f5f80;
+  cursor: pointer;
+}
+
+/* Style the input fields */
+.deposit-money,
+.interest-percentage,
+.invesment-years {
+  display: flex;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #4b4b4b;
+}
+
+/* Add a shadow to the input fields on focus */
+.deposit-money:focus,
+.show-answer:focus,
+.interest-percentage:focus,
+.invesment-years:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
