@@ -1,4 +1,4 @@
-body {
+/* body {
   height: 100vh;
   font-family: Arial, sans-serif;
   display: flex;
@@ -6,6 +6,7 @@ body {
   margin: 0;
   background-color: #f9f9a1a9;
 }
+
 .card {
   margin: 20px;
   background-color: white;
@@ -42,10 +43,16 @@ body {
 
 .buttons {
   text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
+
 button {
   border-radius: 30px;
-  padding: 5px;
+  border: transparent;
+  padding: 10px 20px;
+  border-color: #666;
+  cursor: pointer;
 }
 
 .follow {
@@ -53,6 +60,57 @@ button {
   color: white;
 }
 .description {
-  font-size: 0.95rem;
+  padding: 5px;
+  font-size: 0.7rem;
   text-align: center;
+  margin-bottom: 16px;
+} */
+
+/* עיצוב שדה הטקסט */
+
+.toggle-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+.toggle-checkbox:checked + .toggle-slider {
+  background-color: #4caf50;
+}
+
+.toggle-checkbox:checked + .toggle-slider:before {
+  transform: translateX(26px);
 }
